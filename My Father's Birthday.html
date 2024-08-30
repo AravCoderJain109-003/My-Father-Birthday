@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Reetesh Jain!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            color: #333;
+        }
+        .header {
+            background-color: #ffcccb;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 300px;
+            cursor: pointer;
+        }
+        .funny {
+            background-color: #ffeb3b;
+        }
+        .serious {
+            background-color: #bbdefb;
+        }
+        .footer {
+            background-color: #c8e6c9;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Happy Birthday, Reetesh Jain!</h1>
+        <p>From your loving family, Priyanka, Arav, and everyone else!</p>
+    </div>
+
+    <div class="content">
+        <div class="card serious" onclick="toggleInfo('hero-info')">
+            <h2>Our Hero</h2>
+            <p>Click to know more!</p>
+        </div>
+        <div id="hero-info" class="hidden">
+            <p>Reetesh Jain, the man who can do anything for his family! Whether it's staying up late to help with a school project or waking up early to make sure everyone has breakfast, you're always there. Your dedication and love are unmatched, and we admire your strength and commitment every day. You are our role model and our hero!</p>
+        </div>
+
+        <div class="card funny" onclick="toggleInfo('boss-info')">
+            <h2>The Boss</h2>
+            <p>Click to know more!</p>
+        </div>
+        <div id="boss-info" class="hidden">
+            <p>Dad says, "The work should be done as I say!" 😂 We know you love to be the boss at home, just like at PI Industries. Your way is the best way, or at least that’s what you believe! And while we might laugh about it, we secretly appreciate how organized and determined you are. (But maybe we could have ice cream for dinner once in a while?)</p>
+        </div>
+
+        <div class="card serious" onclick="toggleInfo('husband-info')">
+            <h2>A Loving Husband</h2>
+            <p>Click to know more!</p>
+        </div>
+        <div id="husband-info" class="hidden">
+            <p>Priyanka Jain, your loving wife, knows that you are always there for her. Your support and love make every day special! From surprise dates to helping with household chores, you make sure that life together is an adventure. You’re not just a husband; you’re her best friend, confidant, and partner in crime. Your love story is inspiring and beautiful!</p>
+        </div>
+
+        <div class="card funny" onclick="toggleInfo('superdad-info')">
+            <h2>The Super Dad</h2>
+            <p>Click to know more!</p>
+        </div>
+        <div id="superdad-info" class="hidden">
+            <p>Dad, you’re a superhero to us! Whether it’s fixing a broken toy, helping with homework, or just giving the best hugs, you always save the day. And while your jokes might make us roll our eyes, we wouldn’t have it any other way. You’re our superhero in a suit and tie, and we love you for all the little things you do every day!</p>
+        </div>
+
+        <div class="card serious" onclick="toggleInfo('hobbies-info')">
+            <h2>Hobbies and Interests</h2>
+            <p>Click to know more!</p>
+        </div>
+        <div id="hobbies-info" class="hidden">
+            <p>When you're not working or taking care of the family, you love to unwind with your favorite hobbies. Whether it’s gardening, cooking, reading, or watching a good movie, you find joy in the little things. Your enthusiasm for life is contagious, and you inspire us all to explore new interests and hobbies. You remind us that life is about balance and enjoying every moment!</p>
+        </div>
+
+        <div class="card funny" onclick="toggleInfo('quirks-info')">
+            <h2>Funny Quirks</h2>
+            <p>Click to know more!</p>
+        </div>
+        <div id="quirks-info" class="hidden">
+            <p>We all know that Dad has some funny quirks that make him uniquely himself. Like how he has a specific way of arranging his tools or how he insists on checking every lock before bedtime. And let’s not forget your dance moves, Dad – they may not be professional, but they sure are entertaining! These quirks are what make you, you, and we wouldn’t change a thing!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Happy Birthday again, Dad! We hope you have a fantastic day filled with love, laughter, and cake!</p>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
